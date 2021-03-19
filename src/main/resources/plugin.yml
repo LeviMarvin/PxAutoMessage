@@ -1,0 +1,11 @@
+name: PxAutoMessage
+version: ${project.version}
+main: site.levimarvin.pxautomessage.PxAutoMessage
+authors: [ Levi_Marvin ]
+description: A special Minecraft automatic announcement plugin.
+website: https://dev.levimarvin.site
+
+commands:
+  pxam:
+    permission: pxam.cmd.debug
+    description: ""
