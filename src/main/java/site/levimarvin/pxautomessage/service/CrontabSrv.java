@@ -9,7 +9,7 @@ public class CrontabSrv implements CrontabImpl {
     public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
     public static final BukkitScheduler schedule = PxAutoMessage.getPlugin().getServer().getScheduler();
     public static int taskId;
-    @Override
+
     public void task() {}
 
     @Override

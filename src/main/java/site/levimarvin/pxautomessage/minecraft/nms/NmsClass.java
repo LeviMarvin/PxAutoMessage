@@ -14,7 +14,7 @@ public class NmsClass {
     public Class<?> packetPlayOutTitle;
     public Class<?> enumTitleAction;
 
-    public void getAllClass(){
+    public void init() {
         try {
             iChatBaseComponent = getNmsClass("IChatBaseComponent");
             chatComponentText = getNmsClass("ChatComponentText");

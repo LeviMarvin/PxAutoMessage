@@ -8,7 +8,7 @@ import site.levimarvin.pxautomessage.minecraft.command.Debug;
 import java.lang.reflect.InvocationTargetException;
 import java.util.HashMap;
 
-public class CmdBase {
+public class Command {
     public static final String CNF = "§cCommand not found! Please check it and try again!";
     public static final String HNP = "§cYou have not permission to do this! Please check your permission and try again!";
     public static final String CE = "§cCommand error! Please check it and try again!";

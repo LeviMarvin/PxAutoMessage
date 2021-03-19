@@ -1,6 +1,5 @@
 package site.levimarvin.pxautomessage.util;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
@@ -8,7 +7,7 @@ public class ServerUtil {
     public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
 
     public static String getServerVersion() {
-        String[] versions = Bukkit.getVersion().split("\\.");
+        String[] versions = plugin.getServer().getBukkitVersion().split("\\.");
         String major = versions[0];
         String minor = versions[1];
         String revision = "-1";
@@ -24,6 +23,7 @@ public class ServerUtil {
         return "v" + major + "_" + minor + "_R"+ revision;
     }
 
+    @org.jetbrains.annotations.NotNull
     public static String getNmsPath() {
         return "net.minecraft.server." + getServerVersion();
     }

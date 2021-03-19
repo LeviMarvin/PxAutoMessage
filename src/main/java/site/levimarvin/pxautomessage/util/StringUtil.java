@@ -14,7 +14,11 @@ public class StringUtil {
         return r;
     }
 
-    public static String toJson(String key, String text) {
-        return "{" + "\"" + key + "\":" + text + "}";
+    public static String getJson(String key, String value) {
+        return "{\"" + key + "\":\"" + value + "\"}";
+    }
+
+    public static String getJson(String key1, String key2, String value1, String value2) {
+        return "{\"" + key1 + "\":\"" + value1 + "\",\"" + key2 + "\":\"" + value2 + "\"}";
     }
 }

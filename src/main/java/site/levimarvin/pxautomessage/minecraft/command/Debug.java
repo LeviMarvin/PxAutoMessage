@@ -4,9 +4,9 @@ import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import site.levimarvin.pxautomessage.service.SenderSrv;
+import site.levimarvin.pxautomessage.service.sender.TitleSender;
 
-import static site.levimarvin.pxautomessage.minecraft.CmdBase.*;
+import static site.levimarvin.pxautomessage.minecraft.Command.*;
 
 public class Debug implements CommandExecutor {
     Player p;
@@ -26,6 +26,6 @@ public class Debug implements CommandExecutor {
     }
 
     private void debug() {
-        SenderSrv.sendTitle(p, "123", "456", 1, 2, 1);
+        TitleSender.sendTitle(p, "123", "456", 1, 1, 1);
     }
 }
