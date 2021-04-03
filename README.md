@@ -14,16 +14,16 @@ But, at version 3.0, I will deliver on what I promised:
 * Command binding support for chat bar announcements;
 * Full functionality support for higher version game servers.
 
-In the future, please support us a lot!
+In the future, please support me a lot!
 
 ## Feature
-TODO
+TODO</br>
 
 ## Update Plan
-TODO
+TODO</br>
 
 ## Contact
-QQ:
-WeChat:
-Telegram:
-E-Mail:
+QQ:</br>
+WeChat:</br>
+Telegram:</br>
+E-Mail:</br>
