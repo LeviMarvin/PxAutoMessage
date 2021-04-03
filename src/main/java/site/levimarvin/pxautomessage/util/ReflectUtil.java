@@ -4,7 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
 public class ReflectUtil {
-    public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
+    private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
     public static final String version = ServerUtil.getServerVersion();
 
     public static Class<?> getNmsClass(String name) throws ClassNotFoundException {

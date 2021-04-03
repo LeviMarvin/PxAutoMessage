@@ -7,5 +7,8 @@ website: https://dev.levimarvin.site
 
 commands:
   pxam:
+    permission: pxam.cmd.this
+    description: "The plugin's main command."
+  debug:
     permission: pxam.cmd.debug
-    description: ""
+    description: "IF YOU ARE SERVER OWNER, OP AND PLAYER, DO NOT USE THIS COMMAND!!!"

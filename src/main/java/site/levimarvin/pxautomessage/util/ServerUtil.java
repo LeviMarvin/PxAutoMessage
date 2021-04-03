@@ -4,7 +4,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
 public class ServerUtil {
-    public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
+    private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
 
     public static String getServerVersion() {
         String[] versions = plugin.getServer().getBukkitVersion().split("\\.");

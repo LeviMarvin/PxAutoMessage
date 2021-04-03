@@ -3,12 +3,9 @@ package site.levimarvin.pxautomessage;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
-import site.levimarvin.pxautomessage.implement.SenderImpl;
-import site.levimarvin.pxautomessage.minecraft.Register;
+import site.levimarvin.pxautomessage.minecraft.Command;
 import site.levimarvin.pxautomessage.minecraft.nms.NmsClass;
-import site.levimarvin.pxautomessage.minecraft.obc.ObcClass;
 import site.levimarvin.pxautomessage.service.SenderManagerSrv;
-import site.levimarvin.pxautomessage.service.sender.TitleSender;
 import site.levimarvin.pxautomessage.util.ServerUtil;
 
 import java.util.ArrayList;
@@ -46,9 +43,8 @@ public final class PxAutoMessage extends JavaPlugin {
         serverVersion = ServerUtil.getServerVersion();
         //Init NMS and OBC.
         NmsClass.getNms().init();
-        ObcClass.getObc().init();
         //Register.
-        Register.register();
+        Command.registerCmd();
         //Init thread manager.
         Thread senderManager = new Thread(new SenderManagerSrv(), "Sender Manager Thread");
         senderManager.setDaemon(true);

@@ -6,7 +6,7 @@ import site.levimarvin.pxautomessage.PxAutoMessage;
 import site.levimarvin.pxautomessage.implement.CrontabImpl;
 
 public class CrontabSrv implements CrontabImpl {
-    public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
+    private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
     public static final BukkitScheduler schedule = PxAutoMessage.getPlugin().getServer().getScheduler();
     public static int taskId;
 
