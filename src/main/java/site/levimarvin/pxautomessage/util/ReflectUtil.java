@@ -3,7 +3,7 @@ package site.levimarvin.pxautomessage.util;
 import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
-public class NmsUtil {
+public class ReflectUtil {
     public static final JavaPlugin plugin = PxAutoMessage.getPlugin();
     public static final String version = ServerUtil.getServerVersion();
 

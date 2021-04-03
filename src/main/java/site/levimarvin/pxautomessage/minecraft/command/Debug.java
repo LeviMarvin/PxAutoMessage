@@ -6,8 +6,6 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import site.levimarvin.pxautomessage.service.sender.TitleSender;
 
-import static site.levimarvin.pxautomessage.minecraft.Command.*;
-
 public class Debug implements CommandExecutor {
     Player p;
     @Override
@@ -17,10 +15,10 @@ public class Debug implements CommandExecutor {
             if (args.length == 0){
                 debug();
             }else {
-                p.sendMessage(CE);
+                p.sendMessage(String.valueOf(ErrorInfo.CE));
             }
         }else {
-            p.sendMessage(HNP);
+            p.sendMessage(String.valueOf(ErrorInfo.HNP));
         }
         return false;
     }

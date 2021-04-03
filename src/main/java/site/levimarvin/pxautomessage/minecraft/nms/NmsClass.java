@@ -1,6 +1,6 @@
 package site.levimarvin.pxautomessage.minecraft.nms;
 
-import static site.levimarvin.pxautomessage.util.NmsUtil.getNmsClass;
+import static site.levimarvin.pxautomessage.util.ReflectUtil.getNmsClass;
 
 public class NmsClass {
     private static NmsClass NMS;
