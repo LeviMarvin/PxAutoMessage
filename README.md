@@ -1,7 +1,8 @@
 # PxAutoMessage
 A special Minecraft automatic announcement plugin.
 
-### Someting you should know >(^_^)<
+### Someting you should know 
+>(^_^)<
 Hi, everybody! I'm the PxAutoMessage plugin's author.
 This plugin has been developed for over a year, and I thank you for your support.
 In version 1.0 of this plugin, it only sends chat messages to players at regular intervals.
