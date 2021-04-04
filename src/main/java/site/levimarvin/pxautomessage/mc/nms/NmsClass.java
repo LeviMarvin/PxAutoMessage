@@ -1,4 +1,4 @@
-package site.levimarvin.pxautomessage.minecraft.nms;
+package site.levimarvin.pxautomessage.mc.nms;
 
 import static site.levimarvin.pxautomessage.util.ReflectUtil.getNmsClass;
 
@@ -8,19 +8,24 @@ public class NmsClass {
         if (NMS == null) NMS = new NmsClass();
         return NMS;
     }
+    //Common components.
     public Class<?> iChatBaseComponent;
-    public Class<?> chatComponentText;
     public Class<?> packet;
+    //Title components.
     public Class<?> packetPlayOutTitle;
     public Class<?> enumTitleAction;
+    //Chat components.
+    public Class<?> packetPlayOutChat;
+    public Class<?> chatMessageType;
 
     public void init() {
         try {
             iChatBaseComponent = getNmsClass("IChatBaseComponent");
-            chatComponentText = getNmsClass("ChatComponentText");
             packet = getNmsClass("Packet");
             packetPlayOutTitle = getNmsClass("PacketPlayOutTitle");
             enumTitleAction = getNmsClass("PacketPlayOutTitle$EnumTitleAction");
+            packetPlayOutChat = getNmsClass("PacketPlayOutChat");
+            chatMessageType = getNmsClass("ChatMessageType");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

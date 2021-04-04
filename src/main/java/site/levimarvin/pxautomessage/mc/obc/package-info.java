@@ -10,4 +10,4 @@
  * Change Log:
  *  + Add ObcClass. (v3.0)
  */
-package site.levimarvin.pxautomessage.minecraft.obc;
+package site.levimarvin.pxautomessage.mc.obc;

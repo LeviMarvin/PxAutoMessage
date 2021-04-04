@@ -1,4 +1,4 @@
-package site.levimarvin.pxautomessage.minecraft.listener;
+package site.levimarvin.pxautomessage.mc.listener;
 
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;

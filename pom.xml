@@ -72,11 +72,11 @@
             <version>1.12.2-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
-        <dependency>
+        <!-- <dependency>
             <groupId>org.jetbrains</groupId>
             <artifactId>annotations</artifactId>
             <version>20.1.0</version>
             <scope>compile</scope>
-        </dependency>
+        </dependency> -->
     </dependencies>
 </project>

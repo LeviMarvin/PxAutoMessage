@@ -10,4 +10,4 @@
  * Change Log:
  *  + Add NmsClass. (v3.0)
  */
-package site.levimarvin.pxautomessage.minecraft.nms;
+package site.levimarvin.pxautomessage.mc.nms;

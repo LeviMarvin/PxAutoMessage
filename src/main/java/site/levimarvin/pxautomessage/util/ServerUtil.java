@@ -23,7 +23,6 @@ public class ServerUtil {
         return "v" + major + "_" + minor + "_R"+ revision;
     }
 
-    @org.jetbrains.annotations.NotNull
     public static String getNmsPath() {
         return "net.minecraft.server." + getServerVersion();
     }

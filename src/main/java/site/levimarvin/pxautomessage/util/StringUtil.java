@@ -1,6 +1,10 @@
 package site.levimarvin.pxautomessage.util;
 
 public class StringUtil {
+    public static String[] v2Json(String text) {
+        return null;
+    }
+
     public static boolean isJson(String text) {
         boolean r = false;
         if (!text.equals("")) {

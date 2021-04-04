@@ -1,4 +1,4 @@
-package site.levimarvin.pxautomessage.minecraft.command;
+package site.levimarvin.pxautomessage.mc.command;
 
 public enum ErrorInfo {
     CNF("§cCommand not found! Please check it and try again!"),

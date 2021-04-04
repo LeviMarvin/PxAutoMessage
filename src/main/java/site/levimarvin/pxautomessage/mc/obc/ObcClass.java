@@ -1,4 +1,4 @@
-package site.levimarvin.pxautomessage.minecraft.obc;
+package site.levimarvin.pxautomessage.mc.obc;
 
 import static site.levimarvin.pxautomessage.util.ReflectUtil.getObcClass;
 
