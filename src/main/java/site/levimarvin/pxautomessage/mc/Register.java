@@ -6,7 +6,7 @@ import site.levimarvin.pxautomessage.mc.command.*;
 
 import java.util.HashMap;
 
-public class Command {
+public class Register {
     private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
     private static HashMap<String, Class<?>> cmdMap = new HashMap<>();
 
@@ -25,5 +25,9 @@ public class Command {
             plugin.getServer().getConsoleSender().sendMessage(PxAutoMessage.PREFIX + "§a |   注册命令：" + k);
             plugin.getServer().getPluginCommand(k + "").setExecutor(new CommandExecutor(commandExecutor));
         });
+    }
+
+    public static void registerListener() {
+        //TODO
     }
 }
