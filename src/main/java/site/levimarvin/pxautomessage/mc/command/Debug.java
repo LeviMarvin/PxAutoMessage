@@ -5,8 +5,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import site.levimarvin.pxautomessage.annotation.Permission;
-import site.levimarvin.pxautomessage.service.TextManagerSrv;
+import site.levimarvin.pxautomessage.service.TextManager;
 
+/**
+ * @author Levi Marvin
+ */
 @Permission(permission = "pxam.cmd.debug")
 public class Debug implements CommandExecutor{
     @Override
@@ -24,6 +27,6 @@ public class Debug implements CommandExecutor{
     }
 
     private void debug_DefaultTitle(CommandSender sender) {
-        TextManagerSrv.sendTitle((Player) sender, "{\"text\":\"Main\",\"bold\":\"true\"}", "{\"text\":\"sub\",\"bold\":\"false\"}", 1, 1, 1);
+        TextManager.sendTitle((Player) sender, "{\"text\":\"Main\",\"bold\":\"true\"}", "{\"text\":\"sub\",\"bold\":\"false\"}", 1, 1, 1);
     }
 }

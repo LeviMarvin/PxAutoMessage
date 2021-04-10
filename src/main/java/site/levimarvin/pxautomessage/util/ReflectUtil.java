@@ -1,17 +1,16 @@
 package site.levimarvin.pxautomessage.util;
 
-import org.bukkit.plugin.java.JavaPlugin;
-import site.levimarvin.pxautomessage.PxAutoMessage;
-
+/**
+ * @author Levi Marvin
+ */
 public class ReflectUtil {
-    private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
-    public static final String version = ServerUtil.getServerVersion();
+    public static final String VERSION = ServerUtil.getServerVersion();
 
     public static Class<?> getNmsClass(String name) throws ClassNotFoundException {
-        return Class.forName("net.minecraft.server." + version + "." + name);
+        return Class.forName("net.minecraft.server." + VERSION + "." + name);
     }
 
     public static Class<?> getObcClass(String name) throws ClassNotFoundException {
-        return Class.forName("org.bukkit.craftbukkit." + version + "." + name);
+        return Class.forName("org.bukkit.craftbukkit." + VERSION + "." + name);
     }
 }

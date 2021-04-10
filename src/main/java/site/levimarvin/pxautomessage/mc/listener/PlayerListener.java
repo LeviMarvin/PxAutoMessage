@@ -6,6 +6,9 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.event.player.PlayerQuitEvent;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
+/**
+ * @author Levi Marvin
+ */
 public class PlayerListener implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {

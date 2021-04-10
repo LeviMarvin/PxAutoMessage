@@ -3,11 +3,14 @@ package site.levimarvin.pxautomessage.util;
 import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.PxAutoMessage;
 
+/**
+ * @author Levi Marvin
+ */
 public class ServerUtil {
-    private static final JavaPlugin plugin = PxAutoMessage.getPlugin();
+    private static final JavaPlugin PLUGIN = PxAutoMessage.getPlugin();
 
     public static String getServerVersion() {
-        String[] versions = plugin.getServer().getBukkitVersion().split("\\.");
+        String[] versions = PLUGIN.getServer().getBukkitVersion().split("\\.");
         String major = versions[0];
         String minor = versions[1];
         String revision = "-1";
@@ -21,9 +24,5 @@ public class ServerUtil {
             } catch (ClassNotFoundException ignored) {}
         }
         return "v" + major + "_" + minor + "_R"+ revision;
-    }
-
-    public static String getNmsPath() {
-        return "net.minecraft.server." + getServerVersion();
     }
 }

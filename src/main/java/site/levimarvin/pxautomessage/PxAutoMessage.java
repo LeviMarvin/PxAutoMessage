@@ -5,12 +5,14 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 import site.levimarvin.pxautomessage.mc.Register;
 import site.levimarvin.pxautomessage.mc.nms.NmsClass;
-import site.levimarvin.pxautomessage.service.SenderManagerSrv;
 import site.levimarvin.pxautomessage.util.ServerUtil;
 
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Levi Marvin
+ */
 public final class PxAutoMessage extends JavaPlugin {
     private static PxAutoMessage plugin;
     public static PxAutoMessage getPlugin() {
@@ -46,10 +48,6 @@ public final class PxAutoMessage extends JavaPlugin {
         //Register.
         Register.registerCmd();
         Register.registerListener();
-        //Init thread manager.
-        Thread senderManager = new Thread(new SenderManagerSrv(), "Sender Manager Thread");
-        senderManager.setDaemon(true);
-        senderManager.start();
     }
 
     private void sendMessage(String text) {

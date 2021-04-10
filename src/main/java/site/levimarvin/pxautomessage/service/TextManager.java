@@ -3,7 +3,10 @@ package site.levimarvin.pxautomessage.service;
 import org.bukkit.entity.Player;
 import site.levimarvin.pxautomessage.mc.nms.NmsClass;
 
-public class TextManagerSrv {
+/**
+ * @author Levi Marvin
+ */
+public class TextManager {
     public static void sendChat(Player p, String jsonText){
         try {
             //Create chat text object.

@@ -1,24 +1,19 @@
 package site.levimarvin.pxautomessage.service.sender;
 
 import org.bukkit.entity.Player;
+import org.bukkit.scheduler.BukkitRunnable;
 import site.levimarvin.pxautomessage.PxAutoMessage;
-import site.levimarvin.pxautomessage.implement.SenderImpl;
 
-import static site.levimarvin.pxautomessage.service.TextManagerSrv.sendTitle;
+import static site.levimarvin.pxautomessage.service.TextManager.sendTitle;
 
-public class TitleSender implements SenderImpl {
+/**
+ * @author Levi Marvin
+ */
+public class TitleSender extends BukkitRunnable {
     @Override
     public void run() {
         for (Player p : PxAutoMessage.playerList) {
             sendTitle(p, "Title", "SubTitle",1,1,1);
         }
-    }
-
-    public void stopRunning() {
-
-    }
-
-    public void outInfo() {
-
     }
 }

@@ -2,6 +2,9 @@ package site.levimarvin.pxautomessage.mc.obc;
 
 import static site.levimarvin.pxautomessage.util.ReflectUtil.getObcClass;
 
+/**
+ * @author Levi Marvin
+ */
 public class ObcClass {
     private static ObcClass OBC;
     public static ObcClass getObc() {

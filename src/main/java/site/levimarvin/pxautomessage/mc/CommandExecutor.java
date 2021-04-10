@@ -2,9 +2,13 @@ package site.levimarvin.pxautomessage.mc;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
+import org.bukkit.entity.Player;
 import site.levimarvin.pxautomessage.annotation.Permission;
 import site.levimarvin.pxautomessage.annotation.Commander;
 
+/**
+ * @author Levi Marvin
+ */
 public class CommandExecutor implements org.bukkit.command.CommandExecutor {
     private final org.bukkit.command.CommandExecutor COMMAND_EXECUTOR;
 

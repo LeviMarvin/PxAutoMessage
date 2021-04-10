@@ -1,0 +1,11 @@
+config: 0
+# Config version: 1
+
+lang: "zh_CN"
+update_check: true
+#database: ""
+
+chat: true
+title: true
+actionbar: true
+bossbar: true

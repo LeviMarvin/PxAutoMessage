@@ -1,5 +1,8 @@
 package site.levimarvin.pxautomessage.util;
 
+/**
+ * @author Levi Marvin
+ */
 public class UpdateUtil {
     public static boolean checkUpdate() {
         return false;

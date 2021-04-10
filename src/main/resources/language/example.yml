@@ -1,0 +1,36 @@
+author: ""
+# This language file's author. (You can add the prefix just like "§b")
+# If it is not "Levi Marvin", then it will be shown in the about information.
+
+# Commands
+# Config Tree:
+# cmd:
+#   common:
+#     success: ""
+#     failure: ""
+#     error: ""
+#   <COMMAND_NAME>:
+#     description: ""
+cmd:
+  common:
+    success: "§aCommand execute successfully!"
+    failure: "§cCommand execute failed! Please check your input!"
+    error: "§cThere was an error to stop executing this command!"
+  debug:
+    description: "The debug command of PxAutoMessage. (If you are not this plugin's developer, do NOT use this command!)"
+    usage: "/pxam debug"
+  send:
+    description: "Send a message to player."
+    usage: "/pxam send <Type> <Message> [Player]"
+  update:
+    description: "Self-update this plugin."
+    usage: "/pxam update"
+  reload:
+    description: "Reload configs."
+    usage: "/pxam reload"
+  enable:
+    description: "Enable some function."
+    usage: "/pxam enable <type>"
+  disable:
+    description: "Disable some function."
+    usage: "/pxam disable <type>"
