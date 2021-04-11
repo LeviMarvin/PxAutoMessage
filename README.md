@@ -1,8 +1,9 @@
-# PxAutoMessage
+# RmAutoMessage
+**!>Originally name is PxAutoMessage<!** </br>
 A special Minecraft automatic announcement plugin.
 
 ### Someting you should know >(^_^)<
-Hi, everybody! I'm the PxAutoMessage plugin's author.</br>
+Hi, everybody! I'm the RmAutoMessage(PxAutoMessage) plugin's author.</br>
 This plugin has been developed for over a year, and I thank you for your support.</br>
 In version 1.0 of this plugin, it only sends chat messages to players at regular intervals.</br>
 In version 2.0 of this plugin, in addition to sending chat messages to the player, it also sends title, action bar, and Boss bar messages to the player.</br>
@@ -21,7 +22,10 @@ Thanks!
 TODO</br>
 
 ## Update Plan
-TODO</br>
+* Standard Json support;
+* Internationalization (multilingual) support;
+* Command binding support for chat announcements;
+* Full functionality support for higher version game servers.
 
 ## Contact
 QQ: 1444691679</br>
